@@ -10,7 +10,3 @@
 - Wykonywanie działań o wybranej godzinie
 - Możliwość uruchomienia własnego polecenia
 - Automatyczny zapis ustawień programu
-
-# Chwilowe rozterki:
-- W przypadku nie wybrania daty i uruchomienia automatycznie odlicania czasu z menu kontekstowego- akcja wykonuje się od razu, ten błąd nie jest widoczny w GUI.
-- Inne błędy których nie zauważyłem
