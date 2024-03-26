@@ -10,3 +10,7 @@
 - Wykonywanie działań o wybranej godzinie
 - Możliwość uruchomienia własnego polecenia
 - Automatyczny zapis ustawień programu
+
+# Pobierz program
+
+[Pobierz](https://github.com/Mattronix7200/TimerSysApp/releases/tag/release-1.0.2)
