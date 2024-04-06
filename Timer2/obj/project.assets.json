@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmich\\OneDrive\\Pulpit\\Timer2\\TimerSys.csproj",
+      "projectUniqueName": "C:\\Users\\jmich\\OneDrive\\Projekty\\Develop\\Other\\Timer2\\TimerSys.csproj",
       "projectName": "TimerSys",
-      "projectPath": "C:\\Users\\jmich\\OneDrive\\Pulpit\\Timer2\\TimerSys.csproj",
+      "projectPath": "C:\\Users\\jmich\\OneDrive\\Projekty\\Develop\\Other\\Timer2\\TimerSys.csproj",
       "packagesPath": "C:\\Users\\jmich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmich\\OneDrive\\Pulpit\\Timer2\\obj\\",
+      "outputPath": "C:\\Users\\jmich\\OneDrive\\Projekty\\Develop\\Other\\Timer2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jmich\\AppData\\Roaming\\NuGet\\NuGet.Config",

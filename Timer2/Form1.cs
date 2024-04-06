@@ -23,7 +23,7 @@ namespace Timer2
         private System.Windows.Forms.Timer timer2 = new System.Windows.Forms.Timer();
         private DateTime timer1EndTime;
         private DateTime timer2EndTime;
-        private string configFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.ini");
+        private string configFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "./data/config.ini");
         private NameValueCollection appSettings;
 
         [DllImport("shell32.dll", CharSet = CharSet.Auto)]
@@ -41,51 +41,51 @@ namespace Timer2
         public static string shell32Path = Path.Combine(systemDirectory, "shell32.dll");
         public static string appDirectory = Path.GetDirectoryName(Application.ExecutablePath);
 
-    public Form1()
+        public Form1()
         {
             InitializeComponent();
-                comboBox1.Items.AddRange(new string[] { "Odtwórz dŸwiêk", "Uruchom polecenie", "Wy³¹cz monitor", "Uœpienie", "Wylogowanie", "Restart", "Wy³¹czenie komputera", "Hibernacja", "Blokada u¿ytkownika" });
-                comboBox2.Items.AddRange(new string[] { "Odtwórz dŸwiêk", "Uruchom polecenie", "Wy³¹cz monitor", "Uœpienie", "Wylogowanie", "Restart", "Wy³¹czenie komputera", "Hibernacja", "Blokada u¿ytkownika" });
-                timer1.Interval = 1000;
-                timer1.Tick += Timer1_Tick;
-                timer2.Interval = 1000;
-                timer2.Tick += Timer2_Tick;
-                button1.Click += button1_Click;
-                button2.Click += button2_Click;
-                button3.Click += button3_Click;
-                button4.Click += button4_Click;
-                button5.Click += button5_Click;
-                linkLabel1.LinkClicked += new LinkLabelLinkClickedEventHandler(linkLabel1_LinkClicked);
-                this.MaximizeBox = false;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-                LoadConfigFile();
-                notifyIcon1.Icon = SystemIcons.Application;
-                notifyIcon1.ContextMenuStrip = contextMenuStrip1;
+            comboBox1.Items.AddRange(new string[] { "Odtwórz dŸwiêk", "Uruchom polecenie", "Wy³¹cz monitor", "Uœpienie", "Wylogowanie", "Restart", "Wy³¹czenie komputera", "Hibernacja", "Blokada u¿ytkownika" });
+            comboBox2.Items.AddRange(new string[] { "Odtwórz dŸwiêk", "Uruchom polecenie", "Wy³¹cz monitor", "Uœpienie", "Wylogowanie", "Restart", "Wy³¹czenie komputera", "Hibernacja", "Blokada u¿ytkownika" });
+            timer1.Interval = 1000;
+            timer1.Tick += Timer1_Tick;
+            timer2.Interval = 1000;
+            timer2.Tick += Timer2_Tick;
+            button1.Click += button1_Click;
+            button2.Click += button2_Click;
+            button3.Click += button3_Click;
+            button4.Click += button4_Click;
+            button5.Click += button5_Click;
+            linkLabel1.LinkClicked += new LinkLabelLinkClickedEventHandler(linkLabel1_LinkClicked);
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            LoadConfigFile();
+            notifyIcon1.Icon = SystemIcons.Application;
+            notifyIcon1.ContextMenuStrip = contextMenuStrip1;
 
-                int icon1 = 112;
+            int icon1 = 112;
 
-                if (File.Exists(Path.Combine(appDirectory, "icons", "clock.ico")))
-                {
-                    notifyIcon1.Icon = new Icon(Path.Combine(appDirectory, "icons", "clock.ico"));
-                }
-                else
-                {
-                    notifyIcon1.Icon = ExtractIconFromExe(shell32Path, icon1, true);
-                }
+            if (File.Exists(Path.Combine(appDirectory, "icons", "clock.ico")))
+            {
+                notifyIcon1.Icon = new Icon(Path.Combine(appDirectory, "icons", "clock.ico"));
+            }
+            else
+            {
+                notifyIcon1.Icon = ExtractIconFromExe(shell32Path, icon1, true);
+            }
 
-                Version osVersion = Environment.OSVersion.Version;
-                if (osVersion.Major < 10)
-                {
-                    tabPage1.Text = "Aktywator bezczynnoœci";
-                    tabPage2.Text = "Aktywator czasowy";
-                    tabPage3.Text = "Ustawienia";
-                    tabPage4.Text = "Autorzy";
-                    tabPage5.Text = "O programie...";
-                }
+            Version osVersion = Environment.OSVersion.Version;
+            if (osVersion.Major < 10)
+            {
+                tabPage1.Text = "Aktywator bezczynnoœci";
+                tabPage2.Text = "Aktywator czasowy";
+                tabPage3.Text = "Ustawienia";
+                tabPage4.Text = "Autorzy";
+                tabPage5.Text = "O programie...";
+            }
 
-                textBoxInfo.ScrollBars = ScrollBars.Vertical;
-            
+            textBoxInfo.ScrollBars = ScrollBars.Vertical;
+
         }
 
         private void LoadConfigFile()
@@ -154,6 +154,16 @@ namespace Timer2
                     writer.WriteAttributeString("value", "0");
                     writer.WriteEndElement();
 
+                    writer.WriteStartElement("add");
+                    writer.WriteAttributeString("key", "powerPlanID");
+                    writer.WriteAttributeString("value", "0");
+                    writer.WriteEndElement();
+
+                    writer.WriteStartElement("add");
+                    writer.WriteAttributeString("key", "powerPlanSetID");
+                    writer.WriteAttributeString("value", null);
+                    writer.WriteEndElement();
+
                     writer.WriteEndElement();
                     writer.WriteEndElement();
                     writer.WriteEndDocument();
@@ -209,6 +219,7 @@ namespace Timer2
                     checkBox2.Checked = appSettings["autoStart"] == "1";
                     checkBox3.Checked = appSettings["noMinimalize"] == "1";
                     checkBox4.Checked = appSettings["RunHost"] == "1";
+                    checkBox5.Checked = appSettings["powerPlanID"] == null;
 
                     break;
                 }
@@ -257,7 +268,7 @@ namespace Timer2
                 }
                 catch (IOException)
                 {
-                    if (attempt < maxAttempts - 1) 
+                    if (attempt < maxAttempts - 1)
                     {
                         Thread.Sleep(3500);
                         continue;
@@ -269,6 +280,164 @@ namespace Timer2
                 }
             }
         }
+
+        // funkcja do zaimportowania planu zasilania oraz kontroli czy jest aktywny w systemie
+
+        private System.Threading.Timer powerPlanMonitor;
+        private string importedPowerPlanGuid;
+
+        private string ImportAndSetActivePowerPlan()
+        {
+            var cmd = new Process { StartInfo = { FileName = "powercfg" } };
+            var inputPath = Path.Combine(Environment.CurrentDirectory, "./data/plan.pow");
+            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            var guidString = Guid.NewGuid().ToString("D");
+
+            cmd.StartInfo.Arguments = $"-import \"{inputPath}\" {guidString}";
+            cmd.Start();
+
+            cmd.StartInfo.Arguments = $"/setactive {guidString}";
+            cmd.Start();
+
+            SavePowerPlanImportedGuidToConfigFile(guidString);
+
+            return guidString;
+        }
+
+        private void StartPowerPlanMonitor()
+        {
+            powerPlanMonitor = new System.Threading.Timer(CheckPowerPlan, null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
+        }
+
+        private void StopPowerPlanMonitor()
+        {
+            powerPlanMonitor?.Dispose();
+            powerPlanMonitor = null;
+        }
+
+        private void CheckPowerPlan(object state)
+        {
+            if (!checkBox5.Checked)
+            {
+                return;
+            }
+
+            var cmd = new Process { StartInfo = { FileName = "powercfg" } };
+            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            cmd.StartInfo.Arguments = "/GETACTIVESCHEME";
+            cmd.StartInfo.RedirectStandardOutput = true;
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.Start();
+
+            var output = cmd.StandardOutput.ReadToEnd();
+
+            var outputArray = output.Split(' ');
+            if (outputArray.Length > 2)
+            {
+                var activePlanGuid = outputArray[3].Trim();
+                if (activePlanGuid != importedPowerPlanGuid)
+                {
+                    cmd.StartInfo.Arguments = $"/setactive {importedPowerPlanGuid}";
+                    cmd.Start();
+                }
+            }
+            else
+            {
+                // Handler
+            }
+        }
+
+        private string GetCurrentPowerPlanGuid()
+        {
+            var cmd = new Process { StartInfo = { FileName = "powercfg" } };
+            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            cmd.StartInfo.Arguments = "/GETACTIVESCHEME";
+            cmd.StartInfo.RedirectStandardOutput = true;
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.Start();
+
+            var output = cmd.StandardOutput.ReadToEnd();
+            var outputArray = output.Split(' ');
+
+            if (outputArray.Length > 2)
+            {
+                var activePlanGuid = outputArray[3].Trim();
+                return activePlanGuid;
+            }
+            else
+            {
+                return null; // throw an exception
+            }
+        }
+
+
+        private void SavePowerPlanGuidToConfigFile(string guid)
+        {
+            var configMap = new ExeConfigurationFileMap { ExeConfigFilename = configFilePath };
+            var config = ConfigurationManager.OpenMappedExeConfiguration(configMap, ConfigurationUserLevel.None);
+
+            if (config.AppSettings.Settings["powerPlanID"] == null)
+            {
+                config.AppSettings.Settings.Add("powerPlanID", guid);
+            }
+            else
+            {
+                config.AppSettings.Settings["powerPlanID"].Value = guid;
+            }
+
+            config.Save(ConfigurationSaveMode.Modified);
+        }
+
+
+        private void SavePowerPlanImportedGuidToConfigFile(string guid)
+        {
+            var configMap = new ExeConfigurationFileMap { ExeConfigFilename = configFilePath };
+            var config = ConfigurationManager.OpenMappedExeConfiguration(configMap, ConfigurationUserLevel.None);
+
+            if (config.AppSettings.Settings["powerPlanSetID"] == null)
+            {
+                config.AppSettings.Settings.Add("powerPlanSetID", guid);
+            }
+            else
+            {
+                config.AppSettings.Settings["powerPlanSetID"].Value = guid;
+            }
+
+            config.Save(ConfigurationSaveMode.Modified);
+        }
+
+
+        private void SavePowerPlanRestoreGuidToConfigFile()
+        {
+            var configMap = new ExeConfigurationFileMap { ExeConfigFilename = configFilePath };
+            var config = ConfigurationManager.OpenMappedExeConfiguration(configMap, ConfigurationUserLevel.None);
+            config.AppSettings.Settings["powerPlanSetID"].Value = null;
+            config.Save(ConfigurationSaveMode.Modified);
+        }
+
+        private void RemovePowerPlan()
+        {
+            string powerPlanGuid = appSettings["powerPlanSetID"];
+            if (File.Exists(@"./data/restore.ps1"))
+            {
+                var psi = new ProcessStartInfo
+                {
+                    FileName = "powershell.exe",
+                    Arguments = "-ExecutionPolicy Bypass -File ./data/restore.ps1",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var process = Process.Start(psi);
+                process.WaitForExit();
+            }
+            SavePowerPlanRestoreGuidToConfigFile();
+        }
+
+
+
 
 
         [DllImport("user32.dll")]
@@ -293,7 +462,7 @@ namespace Timer2
 
             long idleTime = Environment.TickCount - lastInputInfo.dwTime;
 
-            if (idleTime < 1000) 
+            if (idleTime < 1000)
             {
                 timer1EndTime = DateTime.Now.Add(TimeSpan.Parse(textBox4.Text));
             }
@@ -406,10 +575,10 @@ namespace Timer2
                     Process.Start(userCommand);
                     break;
                 case "Wy³¹cz monitor":
-                    if (File.Exists(@"monitor.bat"))
+                    if (File.Exists(@"./data/monitor.bat"))
                     {
                         Process proc = new Process();
-                        proc.StartInfo.FileName = @"monitor.bat";
+                        proc.StartInfo.FileName = @"./data/monitor.bat";
                         proc.StartInfo.UseShellExecute = false;
                         proc.StartInfo.RedirectStandardOutput = true;
                         proc.StartInfo.CreateNoWindow = true;
@@ -753,6 +922,50 @@ namespace Timer2
             SaveConfigFile();
         }
 
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            appSettings["RunHost"] = checkBox4.Checked ? "1" : "0";
+            if (checkBox4.Checked)
+            {
+                timer1.Tick -= Timer1_Tick;
+                timer1.Tick += Timer1_Tick_Reset;
+            }
+            else
+            {
+                timer1.Tick -= Timer1_Tick_Reset;
+                timer1.Tick += Timer1_Tick;
+            }
+            SaveConfigFile();
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked)
+            {
+                // Store the GUID of the current power plan
+                var currentPowerPlanGuid = GetCurrentPowerPlanGuid();
+                appSettings["powerPlanID"] = currentPowerPlanGuid;
+                SavePowerPlanGuidToConfigFile(currentPowerPlanGuid);  // Save the current power plan GUID to the config file
+
+                // Import and set the new power plan, and start the monitor
+                importedPowerPlanGuid = ImportAndSetActivePowerPlan();
+                StartPowerPlanMonitor();
+            }
+            else
+            {
+                StopPowerPlanMonitor();
+
+                var cmd = new Process { StartInfo = { FileName = "powercfg" } };
+                cmd.StartInfo.CreateNoWindow = true;
+                cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                cmd.StartInfo.Arguments = $"/setactive {appSettings["powerPlanID"]}";
+                cmd.Start();
+
+                RemovePowerPlan();
+            }
+        }
+
+
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (checkBox3.Checked)
@@ -777,22 +990,6 @@ namespace Timer2
             this.Show();
             this.WindowState = FormWindowState.Normal;
             notifyIcon1.Visible = false;
-        }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-            appSettings["RunHost"] = checkBox4.Checked ? "1" : "0";
-            if (checkBox4.Checked)
-            {
-                timer1.Tick -= Timer1_Tick;
-                timer1.Tick += Timer1_Tick_Reset;
-            }
-            else
-            {
-                timer1.Tick -= Timer1_Tick_Reset;
-                timer1.Tick += Timer1_Tick;
-            }
-            SaveConfigFile();
         }
 
         private void textBoxUser_TextChanged(object sender, EventArgs e)
@@ -850,11 +1047,6 @@ namespace Timer2
         }
 
 
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click_1(object sender, EventArgs e)
         {
 
@@ -864,7 +1056,7 @@ namespace Timer2
         {
             var psi2 = new ProcessStartInfo
             {
-                FileName = "config.ini",
+                FileName = "./data/config.ini",
                 UseShellExecute = true
             };
             Process.Start(psi2);
@@ -894,5 +1086,6 @@ namespace Timer2
         {
 
         }
+
     }
 }

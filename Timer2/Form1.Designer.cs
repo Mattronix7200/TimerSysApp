@@ -65,6 +65,7 @@ namespace Timer2
             label1 = new Label();
             textBoxUser = new TextBox();
             groupBox1 = new GroupBox();
+            checkBox5 = new CheckBox();
             checkBox1 = new CheckBox();
             checkBox2 = new CheckBox();
             checkBox3 = new CheckBox();
@@ -433,9 +434,9 @@ namespace Timer2
             tabPage3.Controls.Add(groupBox2);
             tabPage3.Controls.Add(groupBox1);
             tabPage3.Controls.Add(button5);
-            tabPage3.Location = new Point(4, 26);
+            tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(666, 351);
+            tabPage3.Size = new Size(666, 353);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "🛠️Ustawienia";
             // 
@@ -471,6 +472,7 @@ namespace Timer2
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(checkBox5);
             groupBox1.Controls.Add(checkBox1);
             groupBox1.Controls.Add(checkBox2);
             groupBox1.Controls.Add(checkBox3);
@@ -481,6 +483,17 @@ namespace Timer2
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Ogólne";
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(6, 132);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(501, 21);
+            checkBox5.TabIndex = 4;
+            checkBox5.Text = "Nie pozwalaj na automatycznie usypianie komputera przez Windows (Nie usypiaj)";
+            checkBox5.UseVisualStyleBackColor = true;
+            checkBox5.CheckedChanged += checkBox5_CheckedChanged;
             // 
             // checkBox1
             // 
@@ -547,9 +560,9 @@ namespace Timer2
             tabPage4.Controls.Add(pictureBox2);
             tabPage4.Controls.Add(pictureBox1);
             tabPage4.Controls.Add(label8);
-            tabPage4.Location = new Point(4, 26);
+            tabPage4.Location = new Point(4, 24);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(666, 351);
+            tabPage4.Size = new Size(666, 353);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "ℹ️ Autorzy";
             // 
@@ -695,7 +708,7 @@ namespace Timer2
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Wyłącznik czasowy - v.1.0.2";
+            Text = "Wyłącznik czasowy - v.1.0.3";
             Load += Form1_Load;
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
@@ -771,6 +784,7 @@ namespace Timer2
         private Label label16;
         private Label label17;
         private Label label18;
+        private CheckBox checkBox5;
     }
 }
 

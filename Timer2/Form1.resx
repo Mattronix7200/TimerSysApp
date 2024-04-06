@@ -786,12 +786,15 @@
   </metadata>
   <data name="textBoxInfo.Text" xml:space="preserve">
     <value>=================================
-Skompilowano: 26.03.2024 19:18:25
-Wersja programu: 1.0.2
+Skompilowano: 06.04.2024- 03:53
+Wersja programu: 1.0.3
 Środowisko: .NET Framework 8.0 (Windows 7+)
 =================================
 Ostatnie zmiany:
 -------------------
+Wersja 1.0.3 (06.04.2024)
+-Dodano funkcję (Nie usypiaj), która uniemożliwia systemowi Windows podejmowanie działań w planie zasilania. Gdy opcja zostanie włączona- program utworzy własny plan zasilania który pozwoli kontrolować stanem komputera jedynie za pomocą tego programu. Ponadto program będzie monitorował czy użytkownik w trakcie działania programu nie przełączył się na inny plan zasilania aby zapobiec działaniu domyślnych ustawień zasilania Windows.
+
 Wersja 1.0.2 (26.03.2024)
 -Dodano możliwość uruchomienia dźwięku jako akcję działania
 -Naprawiono problemy pewnych wyjątków aplikacji.
@@ -831,7 +834,7 @@ Zapraszam na stronę internetową: https://github.com/Mattronix7200/Clock oraz s
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABe0AAAEACAYAAAAut10lAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAxVxJREFUeF7svQd4HNd1/i3XxE5x7Dixkzj5f3Gc6hbHsRMnsWVbBaBEFWIWWJAE
+        vAAADrwBlbxySQAAxVxJREFUeF7svQd4HNd1/i3XxE5x7Dixkzj5f3Gc6hbHsRMnsWVbBaBEFWIWWJAE
         2CRREiWKDTMAKYlQ78UqVLW61avVe6+kutjAjrK7WBT2DnLud87gLgUuzu5O24r39zzvQxCYOffOzL1T
         3rlz7gGg/LCrp/+BGtfyVXu89S27rvmHdn1TtYo2TbKjZrNdb15s11u32FHr9ypqvUw/v0c/r6B/u+jv
         ffTzVvp5Jy03oOotxeKfnd/x35xlzE69znv0t5c4Fv18ixObynDKGmtVOWVTHZy6UJ109QAAAAAAAAAA
