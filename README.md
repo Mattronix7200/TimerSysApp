@@ -13,3 +13,4 @@
 - Autozapis ustawień
 - Funkcja działania programu w tle (minimalizacja do zasobnika)
 - Funkcja automatycznego startu odliczania czasu oraz uruchamiania programu
+- Funkcja uniemożliwiająca kontrolowanie planu zasilania przez system Windows
