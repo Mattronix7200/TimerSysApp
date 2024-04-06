@@ -5,7 +5,7 @@
 
 # Pobierz program
 
-[Pobierz](https://github.com/Mattronix7200/TimerSysApp/releases/tag/release-1.0.2)
+[Pobierz](https://github.com/Mattronix7200/TimerSysApp/releases/tag/release-1.0.3)
 
 # Funkcje programu
 - Do wybrania akcje: wyłącz, uśpij, zresetuj komputer, zablokuj, wyloguj użytkownika, uruchom polecenie, odtwórz dźwięk, wyłącz monitor
