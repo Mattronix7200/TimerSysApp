@@ -32,3 +32,10 @@ C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows
 C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.pdb
 C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.genruntimeconfig.cache
 C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\ref\TimerSys.dll
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.Form2.resources
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.Form3.resources
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.Form4.resources
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\bin\Release\net8.0-windows7.0\TimerSys.dll.config
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\bin\Release\net8.0-windows7.0\Newtonsoft.Json.dll
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.csproj.AssemblyReference.cache
+C:\Users\jmich\OneDrive\Projekty\Develop\Other\Timer2\obj\Release\net8.0-windows7.0\TimerSys.csproj.CopyComplete

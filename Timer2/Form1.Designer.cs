@@ -61,16 +61,23 @@ namespace Timer2
             comboBox1 = new ComboBox();
             tabControl1 = new TabControl();
             tabPage3 = new TabPage();
+            groupBox3 = new GroupBox();
+            button7 = new Button();
+            label23 = new Label();
+            label20 = new Label();
+            button5 = new Button();
             groupBox2 = new GroupBox();
+            checkBox7 = new CheckBox();
             label1 = new Label();
             textBoxUser = new TextBox();
             groupBox1 = new GroupBox();
+            button6 = new Button();
+            checkBox6 = new CheckBox();
             checkBox5 = new CheckBox();
             checkBox1 = new CheckBox();
             checkBox2 = new CheckBox();
             checkBox3 = new CheckBox();
             checkBox4 = new CheckBox();
-            button5 = new Button();
             tabPage4 = new TabPage();
             label10 = new Label();
             label9 = new Label();
@@ -82,12 +89,15 @@ namespace Timer2
             label8 = new Label();
             tabPage5 = new TabPage();
             textBoxInfo = new TextBox();
+            label19 = new Label();
             pictureBox5 = new PictureBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
+            pictureBox6 = new PictureBox();
             tabPage2.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage3.SuspendLayout();
+            groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             tabPage4.SuspendLayout();
@@ -97,6 +107,7 @@ namespace Timer2
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // tabPage2
@@ -430,26 +441,101 @@ namespace Timer2
             // 
             // tabPage3
             // 
+            tabPage3.AutoScroll = true;
+            tabPage3.AutoScrollMargin = new Size(0, 20);
             tabPage3.BackColor = SystemColors.ButtonHighlight;
+            tabPage3.Controls.Add(groupBox3);
             tabPage3.Controls.Add(groupBox2);
             tabPage3.Controls.Add(groupBox1);
-            tabPage3.Controls.Add(button5);
-            tabPage3.Location = new Point(4, 24);
+            tabPage3.Location = new Point(4, 26);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(666, 353);
+            tabPage3.Size = new Size(666, 351);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "🛠️Ustawienia";
+            tabPage3.Click += tabPage3_Click_1;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(button7);
+            groupBox3.Controls.Add(label23);
+            groupBox3.Controls.Add(label20);
+            groupBox3.Controls.Add(button5);
+            groupBox3.Location = new Point(20, 321);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(610, 108);
+            groupBox3.TabIndex = 20;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Aplikacja";
+            // 
+            // button7
+            // 
+            button7.Location = new Point(312, 63);
+            button7.Name = "button7";
+            button7.Size = new Size(280, 28);
+            button7.TabIndex = 21;
+            button7.Text = "Resetuj ustawienia aplikacji";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Enabled = false;
+            label23.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label23.ForeColor = Color.SteelBlue;
+            label23.Location = new Point(17, 28);
+            label23.Name = "label23";
+            label23.Size = new Size(244, 17);
+            label23.TabIndex = 21;
+            label23.Text = "Posiadasz najnowszą wersję programu.";
+            label23.Visible = false;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Enabled = false;
+            label20.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label20.ForeColor = Color.ForestGreen;
+            label20.Location = new Point(16, 28);
+            label20.Name = "label20";
+            label20.Size = new Size(386, 17);
+            label20.TabIndex = 18;
+            label20.Text = "Dostępna jest nowa wersja aplikacji. Kliknij mnie aby ją pobrać.";
+            label20.Visible = false;
+            label20.Click += label20_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(17, 63);
+            button5.Name = "button5";
+            button5.Size = new Size(280, 28);
+            button5.TabIndex = 5;
+            button5.Text = "Edytuj plik konfiguracyjny";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(checkBox7);
             groupBox2.Controls.Add(label1);
             groupBox2.Controls.Add(textBoxUser);
             groupBox2.Location = new Point(20, 191);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(628, 93);
+            groupBox2.Size = new Size(610, 124);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "Zdefiniowane akcje";
+            // 
+            // checkBox7
+            // 
+            checkBox7.AutoSize = true;
+            checkBox7.Location = new Point(20, 90);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(545, 21);
+            checkBox7.TabIndex = 9;
+            checkBox7.Text = "Zaczekaj na działanie użytkownika zanim program wymusi otworzenie kolejnego procesu.";
+            checkBox7.UseVisualStyleBackColor = true;
+            checkBox7.CheckedChanged += checkBox7_CheckedChanged;
             // 
             // label1
             // 
@@ -466,12 +552,14 @@ namespace Timer2
             textBoxUser.BorderStyle = BorderStyle.FixedSingle;
             textBoxUser.Location = new Point(17, 24);
             textBoxUser.Name = "textBoxUser";
-            textBoxUser.Size = new Size(592, 25);
+            textBoxUser.Size = new Size(575, 25);
             textBoxUser.TabIndex = 7;
             textBoxUser.TextChanged += textBoxUser_TextChanged;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(button6);
+            groupBox1.Controls.Add(checkBox6);
             groupBox1.Controls.Add(checkBox5);
             groupBox1.Controls.Add(checkBox1);
             groupBox1.Controls.Add(checkBox2);
@@ -479,15 +567,37 @@ namespace Timer2
             groupBox1.Controls.Add(checkBox4);
             groupBox1.Location = new Point(20, 14);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(628, 171);
+            groupBox1.Size = new Size(610, 171);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Ogólne";
             // 
+            // button6
+            // 
+            button6.Enabled = false;
+            button6.Location = new Point(224, 135);
+            button6.Name = "button6";
+            button6.Size = new Size(106, 26);
+            button6.TabIndex = 6;
+            button6.Text = "Ustaw hasło";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.Location = new Point(6, 137);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(220, 21);
+            checkBox6.TabIndex = 5;
+            checkBox6.Text = "Aktywuj blokadę ustawień hasłem";
+            checkBox6.UseVisualStyleBackColor = true;
+            checkBox6.CheckedChanged += checkBox6_CheckedChanged;
+            // 
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(6, 132);
+            checkBox5.Location = new Point(6, 112);
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(501, 21);
             checkBox5.TabIndex = 4;
@@ -498,7 +608,7 @@ namespace Timer2
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(6, 24);
+            checkBox1.Location = new Point(6, 20);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(394, 21);
             checkBox1.TabIndex = 0;
@@ -509,7 +619,7 @@ namespace Timer2
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(6, 51);
+            checkBox2.Location = new Point(6, 43);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(584, 21);
             checkBox2.TabIndex = 1;
@@ -520,7 +630,7 @@ namespace Timer2
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(6, 78);
+            checkBox3.Location = new Point(6, 66);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(349, 21);
             checkBox3.TabIndex = 3;
@@ -531,23 +641,13 @@ namespace Timer2
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(6, 105);
+            checkBox4.Location = new Point(6, 89);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(439, 21);
             checkBox4.TabIndex = 2;
             checkBox4.Text = "Włącz automatyczne resetowanie licznika (tylko akywator bezczynności)";
             checkBox4.UseVisualStyleBackColor = true;
             checkBox4.CheckedChanged += checkBox4_CheckedChanged;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(20, 301);
-            button5.Name = "button5";
-            button5.Size = new Size(628, 28);
-            button5.TabIndex = 5;
-            button5.Text = "Edytuj plik konfiguracyjny (zaawansowane)";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // tabPage4
             // 
@@ -664,7 +764,7 @@ namespace Timer2
             tabPage5.Name = "tabPage5";
             tabPage5.Size = new Size(666, 351);
             tabPage5.TabIndex = 4;
-            tabPage5.Text = "💿 O programie...";
+            tabPage5.Text = "💿 Ostatnie zmiany";
             // 
             // textBoxInfo
             // 
@@ -679,6 +779,21 @@ namespace Timer2
             textBoxInfo.TabIndex = 18;
             textBoxInfo.Text = resources.GetString("textBoxInfo.Text");
             textBoxInfo.TextChanged += textBox1_TextChanged_2;
+            // 
+            // label19
+            // 
+            label19.BackColor = Color.SlateGray;
+            label19.Enabled = false;
+            label19.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label19.ForeColor = SystemColors.Control;
+            label19.Location = new Point(0, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(733, 553);
+            label19.TabIndex = 17;
+            label19.Text = "\r\nPROGRAM ZABLOKOWANY\r\n_____________________________\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAby go odblokować, naciśnij dowolne miejsce tego \r\nokna, aby wyświetlić okno logowania.";
+            label19.TextAlign = ContentAlignment.TopCenter;
+            label19.Visible = false;
+            label19.Click += label19_Click;
             // 
             // pictureBox5
             // 
@@ -697,18 +812,36 @@ namespace Timer2
             contextMenuStrip1.Size = new Size(61, 4);
             contextMenuStrip1.Opening += contextMenuStrip1_Opening;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.SlateGray;
+            pictureBox6.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = TimerSys.Properties.Resources.key_1f511;
+            pictureBox6.InitialImage = (Image)resources.GetObject("pictureBox6.InitialImage");
+            pictureBox6.Location = new Point(280, 147);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(170, 164);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 19;
+            pictureBox6.TabStop = false;
+            pictureBox6.Visible = false;
+            pictureBox6.Click += pictureBox6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(732, 552);
-            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox6);
+            Controls.Add(label19);
             Controls.Add(tabControl1);
+            Controls.Add(pictureBox5);
             Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Wyłącznik czasowy - v.1.0.3";
+            Text = "Wyłącznik czasowy - v.1.0.5";
             Load += Form1_Load;
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
@@ -716,6 +849,8 @@ namespace Timer2
             tabPage1.PerformLayout();
             tabControl1.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -729,6 +864,7 @@ namespace Timer2
             tabPage5.ResumeLayout(false);
             tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -746,7 +882,7 @@ namespace Timer2
         private Button button2;
         private Button button1;
         private ComboBox comboBox1;
-        private TabControl tabControl1;
+        public TabControl tabControl1;
         private TabPage tabPage3;
         private TabPage tabPage4;
         private PictureBox pictureBox1;
@@ -785,6 +921,15 @@ namespace Timer2
         private Label label17;
         private Label label18;
         private CheckBox checkBox5;
+        public Button button6;
+        private CheckBox checkBox6;
+        public Label label19;
+        public PictureBox pictureBox6;
+        private GroupBox groupBox3;
+        private Label label20;
+        private Label label23;
+        private Button button7;
+        private CheckBox checkBox7;
     }
 }
 
