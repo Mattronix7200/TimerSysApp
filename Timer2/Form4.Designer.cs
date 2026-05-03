@@ -44,14 +44,16 @@
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label2.ForeColor = Color.Red;
-            label2.Location = new Point(296, 53);
+            label2.BackColor = Color.AntiqueWhite;
+            label2.BorderStyle = BorderStyle.FixedSingle;
+            label2.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label2.ForeColor = Color.Coral;
+            label2.Location = new Point(12, 48);
             label2.Name = "label2";
-            label2.Size = new Size(50, 17);
+            label2.Size = new Size(427, 53);
             label2.TabIndex = 1;
             label2.Text = "123456";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form4
             // 
@@ -68,7 +70,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Komunikat";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

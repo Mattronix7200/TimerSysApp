@@ -33,10 +33,7 @@ namespace Timer2
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabPage2 = new TabPage();
-            label18 = new Label();
-            label14 = new Label();
-            label16 = new Label();
-            label12 = new Label();
+            tip02 = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
@@ -44,12 +41,10 @@ namespace Timer2
             textBox7 = new TextBox();
             button4 = new Button();
             dateTimePicker1 = new DateTimePicker();
-            button3 = new Button();
             comboBox2 = new ComboBox();
+            label12 = new Label();
             tabPage1 = new TabPage();
-            label15 = new Label();
-            label17 = new Label();
-            label13 = new Label();
+            tip01 = new Label();
             label11 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -57,66 +52,91 @@ namespace Timer2
             textBox5 = new TextBox();
             textBox4 = new TextBox();
             button2 = new Button();
-            button1 = new Button();
             comboBox1 = new ComboBox();
             tabControl1 = new TabControl();
+            tabPage6 = new TabPage();
+            stopStartHarmonogram = new Button();
+            tip03 = new Label();
+            checkedListBox1 = new CheckedListBox();
+            label26 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            textBox1 = new TextBox();
+            button8 = new Button();
+            label22 = new Label();
+            comboBox3 = new ComboBox();
+            label21 = new Label();
+            tabPage5 = new TabPage();
+            button12 = new Button();
+            button11 = new Button();
+            button10 = new Button();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label9 = new Label();
             tabPage3 = new TabPage();
             groupBox3 = new GroupBox();
+            button13 = new Button();
             button7 = new Button();
             label23 = new Label();
             label20 = new Label();
             button5 = new Button();
-            groupBox2 = new GroupBox();
+            groupBox1 = new GroupBox();
+            checkBox16 = new CheckBox();
+            checkBox15 = new CheckBox();
+            checkBox12 = new CheckBox();
             checkBox7 = new CheckBox();
+            checkBox6 = new CheckBox();
+            button6 = new Button();
             label1 = new Label();
             textBoxUser = new TextBox();
-            groupBox1 = new GroupBox();
-            button6 = new Button();
-            checkBox6 = new CheckBox();
+            checkBox11 = new CheckBox();
+            checkBox8 = new CheckBox();
+            label27 = new Label();
+            label29 = new Label();
+            checkBox10 = new CheckBox();
             checkBox5 = new CheckBox();
             checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
+            checkBox9 = new CheckBox();
             checkBox3 = new CheckBox();
+            checkBox2 = new CheckBox();
+            label28 = new Label();
             checkBox4 = new CheckBox();
             tabPage4 = new TabPage();
+            textBoxInfo = new TextBox();
             label10 = new Label();
-            label9 = new Label();
             pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            linkLabel1 = new LinkLabel();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             label8 = new Label();
-            tabPage5 = new TabPage();
-            textBoxInfo = new TextBox();
-            label19 = new Label();
             pictureBox5 = new PictureBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            pictureBox6 = new PictureBox();
+            label19 = new PictureBox();
+            helpLink = new LinkLabel();
             tabPage2.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
+            tabPage6.SuspendLayout();
+            tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabPage3.SuspendLayout();
             groupBox3.SuspendLayout();
-            groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)label19).BeginInit();
             SuspendLayout();
             // 
             // tabPage2
             // 
             tabPage2.BackColor = SystemColors.ButtonHighlight;
-            tabPage2.Controls.Add(label18);
-            tabPage2.Controls.Add(label14);
-            tabPage2.Controls.Add(label16);
-            tabPage2.Controls.Add(label12);
+            tabPage2.Controls.Add(tip02);
             tabPage2.Controls.Add(label7);
             tabPage2.Controls.Add(label6);
             tabPage2.Controls.Add(label5);
@@ -124,69 +144,32 @@ namespace Timer2
             tabPage2.Controls.Add(textBox7);
             tabPage2.Controls.Add(button4);
             tabPage2.Controls.Add(dateTimePicker1);
-            tabPage2.Controls.Add(button3);
             tabPage2.Controls.Add(comboBox2);
+            tabPage2.Controls.Add(label12);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(666, 353);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "🗓️Aktywator czasowy";
+            tabPage2.Text = "🗓️ Stoper";
             // 
-            // label18
+            // tip02
             // 
-            label18.BackColor = SystemColors.Info;
-            label18.Cursor = Cursors.Help;
-            label18.ForeColor = Color.FromArgb(192, 64, 0);
-            label18.Location = new Point(380, 41);
-            label18.Name = "label18";
-            label18.Padding = new Padding(10);
-            label18.Size = new Size(268, 160);
-            label18.TabIndex = 23;
-            label18.Text = "WSKAZÓWKA\r\n\r\nPo wybraniu tej opcji zostanie wykonane polecenie, które zdefiniujesz w ustawieniach, np: uruchomienie programu lub skryptu.\r\n";
-            // 
-            // label14
-            // 
-            label14.BackColor = SystemColors.Info;
-            label14.Cursor = Cursors.Help;
-            label14.ForeColor = Color.FromArgb(192, 64, 0);
-            label14.Location = new Point(380, 41);
-            label14.Name = "label14";
-            label14.Padding = new Padding(10);
-            label14.Size = new Size(268, 160);
-            label14.TabIndex = 21;
-            label14.Text = "WSKAZÓWKA\r\n\r\nAby zmienić dźwięk na własny, podmień go w katalogu \"sound\" w folderze aplikacji na plik \".wav\"";
-            // 
-            // label16
-            // 
-            label16.BackColor = SystemColors.Info;
-            label16.Cursor = Cursors.Help;
-            label16.ForeColor = Color.FromArgb(192, 64, 0);
-            label16.Location = new Point(380, 41);
-            label16.Name = "label16";
-            label16.Padding = new Padding(10);
-            label16.Size = new Size(268, 160);
-            label16.TabIndex = 22;
-            label16.Text = "WSKAZÓWKA\r\n\r\nUwaga! Wybranie tej opcji  w czasie krótszym niż 15 sekund lub/i wykonanie jej razem z włączoną opcją - Resetuj licznik (patrz Ustawienia), może spowodować blokadę ekranu.";
-            // 
-            // label12
-            // 
-            label12.BackColor = SystemColors.Control;
-            label12.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 238);
-            label12.Location = new Point(21, 267);
-            label12.Name = "label12";
-            label12.Padding = new Padding(10);
-            label12.Size = new Size(627, 57);
-            label12.TabIndex = 19;
-            label12.Text = "Tutaj możesz zdefiniować oraz aktywować określone działanie w konkretnym czasie. Aby to zadziałało, należy wybrać datę oraz podać godznę. Bezczynność nie będzie monitorowana.";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
-            label12.Click += label12_Click;
+            tip02.BackColor = SystemColors.Info;
+            tip02.Cursor = Cursors.Help;
+            tip02.ForeColor = Color.FromArgb(192, 64, 0);
+            tip02.Location = new Point(418, 99);
+            tip02.Name = "tip02";
+            tip02.Padding = new Padding(10);
+            tip02.Size = new Size(230, 170);
+            tip02.TabIndex = 23;
+            tip02.Text = "WSKAZÓWKA\r\n\r\n%selectedIndexoption-info%\r\n";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.DimGray;
-            label7.Location = new Point(106, 141);
+            label7.Location = new Point(106, 202);
             label7.Name = "label7";
             label7.Size = new Size(209, 17);
             label7.TabIndex = 20;
@@ -196,22 +179,21 @@ namespace Timer2
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label6.Location = new Point(18, 84);
+            label6.Location = new Point(20, 146);
             label6.Name = "label6";
-            label6.Size = new Size(231, 17);
+            label6.Size = new Size(180, 17);
             label6.TabIndex = 19;
-            label6.Text = "Kiedy mam wykonać wybraną akcję?";
+            label6.Text = "Moment aktywacji działania";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label5.Location = new Point(19, 18);
+            label5.Location = new Point(20, 78);
             label5.Name = "label5";
-            label5.Size = new Size(193, 17);
+            label5.Size = new Size(155, 17);
             label5.TabIndex = 18;
-            label5.Text = "Zdecyduj, co chciałbyś zrobić?";
-            label5.Click += label5_Click;
+            label5.Text = "Czynność do wykonania";
             // 
             // textBox9
             // 
@@ -219,19 +201,18 @@ namespace Timer2
             textBox9.BorderStyle = BorderStyle.None;
             textBox9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
             textBox9.ForeColor = SystemColors.MenuHighlight;
-            textBox9.Location = new Point(19, 225);
+            textBox9.Location = new Point(19, 278);
             textBox9.Multiline = true;
             textBox9.Name = "textBox9";
             textBox9.ReadOnly = true;
             textBox9.Size = new Size(629, 63);
             textBox9.TabIndex = 15;
             textBox9.TextAlign = HorizontalAlignment.Center;
-            textBox9.TextChanged += textBox9_TextChanged;
             // 
             // textBox7
             // 
             textBox7.BorderStyle = BorderStyle.FixedSingle;
-            textBox7.Location = new Point(20, 139);
+            textBox7.Location = new Point(20, 200);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(79, 25);
             textBox7.TabIndex = 14;
@@ -239,45 +220,46 @@ namespace Timer2
             // 
             // button4
             // 
-            button4.Location = new Point(136, 182);
+            button4.Location = new Point(20, 243);
             button4.Name = "button4";
-            button4.Size = new Size(99, 26);
+            button4.Size = new Size(343, 26);
             button4.TabIndex = 15;
-            button4.Text = "Zatrzymaj";
+            button4.Text = "Dodaj do listy zadań i uruchom";
             button4.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(20, 108);
+            dateTimePicker1.Location = new Point(20, 169);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(295, 25);
             dateTimePicker1.TabIndex = 15;
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
-            // button3
-            // 
-            button3.Location = new Point(20, 182);
-            button3.Name = "button3";
-            button3.Size = new Size(99, 26);
-            button3.TabIndex = 14;
-            button3.Text = "Uruchom";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(20, 41);
+            comboBox2.Location = new Point(20, 102);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(343, 25);
             comboBox2.TabIndex = 11;
             comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
+            // label12
+            // 
+            label12.BackColor = SystemColors.Control;
+            label12.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 238);
+            label12.Location = new Point(21, 12);
+            label12.Name = "label12";
+            label12.Padding = new Padding(10);
+            label12.Size = new Size(627, 51);
+            label12.TabIndex = 19;
+            label12.Text = "Tutaj możesz zdefiniować oraz aktywować określone działanie w konkretnym czasie. Aby to zadziałało, należy wybrać datę oraz podać godznę. Bezczynność nie będzie monitorowana.";
+            label12.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // tabPage1
             // 
             tabPage1.BackColor = SystemColors.ButtonHighlight;
-            tabPage1.Controls.Add(label15);
-            tabPage1.Controls.Add(label17);
-            tabPage1.Controls.Add(label13);
+            tabPage1.Controls.Add(tip01);
             tabPage1.Controls.Add(label11);
             tabPage1.Controls.Add(label4);
             tabPage1.Controls.Add(label3);
@@ -285,70 +267,43 @@ namespace Timer2
             tabPage1.Controls.Add(textBox5);
             tabPage1.Controls.Add(textBox4);
             tabPage1.Controls.Add(button2);
-            tabPage1.Controls.Add(button1);
             tabPage1.Controls.Add(comboBox1);
             tabPage1.Location = new Point(4, 26);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(666, 351);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "⏰Aktywator bezczynności";
+            tabPage1.Text = "💤 Bezczynność";
             // 
-            // label15
+            // tip01
             // 
-            label15.BackColor = SystemColors.Info;
-            label15.Cursor = Cursors.Help;
-            label15.ForeColor = Color.FromArgb(192, 64, 0);
-            label15.Location = new Point(379, 41);
-            label15.Name = "label15";
-            label15.Padding = new Padding(10);
-            label15.Size = new Size(268, 160);
-            label15.TabIndex = 20;
-            label15.Text = "WSKAZÓWKA\r\n\r\nAby zmienić dźwięk na własny, podmień go w katalogu \"sound\" w folderze aplikacji na plik \".wav\"";
-            // 
-            // label17
-            // 
-            label17.BackColor = SystemColors.Info;
-            label17.Cursor = Cursors.Help;
-            label17.ForeColor = Color.FromArgb(192, 64, 0);
-            label17.Location = new Point(380, 41);
-            label17.Name = "label17";
-            label17.Padding = new Padding(10);
-            label17.Size = new Size(268, 160);
-            label17.TabIndex = 22;
-            label17.Text = "WSKAZÓWKA\r\n\r\nPo wybraniu tej opcji zostanie wykonane polecenie, które zdefiniujesz w ustawieniach, np: uruchomienie programu lub skryptu.";
-            // 
-            // label13
-            // 
-            label13.BackColor = SystemColors.Info;
-            label13.Cursor = Cursors.Help;
-            label13.ForeColor = Color.FromArgb(192, 64, 0);
-            label13.Location = new Point(379, 41);
-            label13.Name = "label13";
-            label13.Padding = new Padding(10);
-            label13.Size = new Size(268, 160);
-            label13.TabIndex = 19;
-            label13.Text = "WSKAZÓWKA\r\n\r\nUwaga! Wybranie tej opcji  w czasie krótszym niż 15 sekund lub/i wykonanie jej razem z włączoną opcją - Resetuj licznik (patrz Ustawienia), może spowodować blokadę ekranu.";
-            label13.Click += label13_Click_1;
+            tip01.BackColor = SystemColors.Info;
+            tip01.Cursor = Cursors.Help;
+            tip01.ForeColor = Color.FromArgb(192, 64, 0);
+            tip01.Location = new Point(418, 81);
+            tip01.Name = "tip01";
+            tip01.Padding = new Padding(10);
+            tip01.Size = new Size(230, 170);
+            tip01.TabIndex = 20;
+            tip01.Text = "WSKAZÓWKA\r\n\r\n%selectedIndexoption-info%";
             // 
             // label11
             // 
             label11.BackColor = SystemColors.Control;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 238);
-            label11.Location = new Point(20, 265);
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            label11.Location = new Point(21, 12);
             label11.Name = "label11";
             label11.Padding = new Padding(10);
-            label11.Size = new Size(627, 57);
+            label11.Size = new Size(627, 54);
             label11.TabIndex = 18;
-            label11.Text = "Za pomocą powyższych opcji możesz zdefiniować wykonanie akcji po upływie określonej ilośći czasu bezczynności systemu (braku aktywności użytkownika)";
-            label11.TextAlign = ContentAlignment.MiddleCenter;
-            label11.Click += label11_Click;
+            label11.Text = "Za pomocą powyższych opcji możesz zdefiniować wykonanie akcji po upływie określonej ilości czasu bezczynności systemu (braku aktywności użytkownika)";
+            label11.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.DimGray;
-            label4.Location = new Point(20, 142);
+            label4.Location = new Point(20, 199);
             label4.Name = "label4";
             label4.Size = new Size(204, 17);
             label4.TabIndex = 17;
@@ -358,22 +313,21 @@ namespace Timer2
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(20, 85);
+            label3.Location = new Point(20, 142);
             label3.Name = "label3";
-            label3.Size = new Size(231, 17);
+            label3.Size = new Size(175, 17);
             label3.TabIndex = 16;
-            label3.Text = "Za ile mam wykonać wybraną akcję?";
+            label3.Text = "Czas do aktywacji działania";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(20, 17);
+            label2.Location = new Point(20, 74);
             label2.Name = "label2";
-            label2.Size = new Size(193, 17);
+            label2.Size = new Size(155, 17);
             label2.TabIndex = 15;
-            label2.Text = "Zdecyduj, co chciałbyś zrobić?";
-            label2.Click += label2_Click;
+            label2.Text = "Czynność do wykonania";
             // 
             // textBox5
             // 
@@ -381,19 +335,18 @@ namespace Timer2
             textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
             textBox5.ForeColor = SystemColors.MenuHighlight;
-            textBox5.Location = new Point(20, 221);
+            textBox5.Location = new Point(20, 277);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(627, 56);
             textBox5.TabIndex = 14;
             textBox5.TextAlign = HorizontalAlignment.Center;
-            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // textBox4
             // 
             textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(20, 109);
+            textBox4.Location = new Point(20, 166);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(343, 25);
             textBox4.TabIndex = 12;
@@ -401,26 +354,17 @@ namespace Timer2
             // 
             // button2
             // 
-            button2.Location = new Point(138, 168);
+            button2.Location = new Point(21, 225);
             button2.Name = "button2";
-            button2.Size = new Size(99, 26);
+            button2.Size = new Size(342, 26);
             button2.TabIndex = 13;
-            button2.Text = "Zatrzymaj";
+            button2.Text = "Dodaj do listy zadań i uruchom";
             button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(20, 168);
-            button1.Name = "button1";
-            button1.Size = new Size(99, 26);
-            button1.TabIndex = 2;
-            button1.Text = "Uruchom";
-            button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(20, 41);
+            comboBox1.Location = new Point(20, 98);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(343, 25);
             comboBox1.TabIndex = 0;
@@ -430,14 +374,271 @@ namespace Timer2
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage6);
+            tabControl1.Controls.Add(tabPage5);
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Controls.Add(tabPage4);
-            tabControl1.Controls.Add(tabPage5);
             tabControl1.Location = new Point(28, 143);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(674, 381);
             tabControl1.TabIndex = 8;
+            // 
+            // tabPage6
+            // 
+            tabPage6.AutoScroll = true;
+            tabPage6.AutoScrollMargin = new Size(0, 20);
+            tabPage6.BackColor = SystemColors.ButtonHighlight;
+            tabPage6.Controls.Add(stopStartHarmonogram);
+            tabPage6.Controls.Add(tip03);
+            tabPage6.Controls.Add(checkedListBox1);
+            tabPage6.Controls.Add(label26);
+            tabPage6.Controls.Add(label24);
+            tabPage6.Controls.Add(label25);
+            tabPage6.Controls.Add(textBox1);
+            tabPage6.Controls.Add(button8);
+            tabPage6.Controls.Add(label22);
+            tabPage6.Controls.Add(comboBox3);
+            tabPage6.Controls.Add(label21);
+            tabPage6.Location = new Point(4, 24);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Size = new Size(666, 353);
+            tabPage6.TabIndex = 5;
+            tabPage6.Text = "⚡ Harmonogram";
+            // 
+            // stopStartHarmonogram
+            // 
+            stopStartHarmonogram.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            stopStartHarmonogram.Location = new Point(416, 303);
+            stopStartHarmonogram.Name = "stopStartHarmonogram";
+            stopStartHarmonogram.Size = new Size(217, 26);
+            stopStartHarmonogram.TabIndex = 34;
+            stopStartHarmonogram.Text = "Uruchom / Zatrzymaj harmonogram";
+            stopStartHarmonogram.UseVisualStyleBackColor = true;
+            // 
+            // tip03
+            // 
+            tip03.BackColor = SystemColors.Info;
+            tip03.Cursor = Cursors.Help;
+            tip03.ForeColor = Color.FromArgb(192, 64, 0);
+            tip03.Location = new Point(416, 90);
+            tip03.Name = "tip03";
+            tip03.Padding = new Padding(10);
+            tip03.Size = new Size(217, 201);
+            tip03.TabIndex = 33;
+            tip03.Text = "WSKAZÓWKA\r\n\r\n%selectedIndexoption-info%\r\n";
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "Codziennie", "Co dwa dni", "Co trzy dni", "Co cztery dni", "Co pięć dni", "Co sześć dni", "Co tydzień", "W każdy weekend (Pt.-Nd.)", "W każdy poniedziałek", "W każdy wtorek", "W każdą środę", "W każdy czwartek", "W każdy piątek", "W każdą sobotę", "W każdą niedzielę", "Od poniedziałku do piątku", "⏱ Powtarzaj co..." });
+            checkedListBox1.Location = new Point(20, 227);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(343, 64);
+            checkedListBox1.TabIndex = 30;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label26.Location = new Point(20, 200);
+            label26.Name = "label26";
+            label26.Size = new Size(212, 17);
+            label26.TabIndex = 28;
+            label26.Text = "Moment powtórzenia aktywatora";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.ForeColor = Color.DimGray;
+            label24.Location = new Point(106, 167);
+            label24.Name = "label24";
+            label24.Size = new Size(209, 17);
+            label24.TabIndex = 27;
+            label24.Text = "Podaj godzinę w formacie HH:MM";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label25.Location = new Point(20, 138);
+            label25.Name = "label25";
+            label25.Size = new Size(180, 17);
+            label25.TabIndex = 26;
+            label25.Text = "Moment aktywacji działania";
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(20, 164);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(79, 25);
+            textBox1.TabIndex = 23;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(20, 303);
+            button8.Name = "button8";
+            button8.Size = new Size(343, 26);
+            button8.TabIndex = 25;
+            button8.Text = "Dodaj do listy zadań i uruchom";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label22.Location = new Point(20, 79);
+            label22.Name = "label22";
+            label22.Size = new Size(155, 17);
+            label22.TabIndex = 22;
+            label22.Text = "Czynność do wykonania";
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(20, 103);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(343, 25);
+            comboBox3.TabIndex = 21;
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
+            // 
+            // label21
+            // 
+            label21.BackColor = SystemColors.Control;
+            label21.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 238);
+            label21.Location = new Point(20, 11);
+            label21.Name = "label21";
+            label21.Padding = new Padding(10);
+            label21.Size = new Size(613, 53);
+            label21.TabIndex = 20;
+            label21.Text = "Jeżeli potrzebujesz uaktywnienia licznika czasu powtarzanego ciągiem według określonego harmonogramu, skorzystaj z powyższych opcji.";
+            label21.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // tabPage5
+            // 
+            tabPage5.Controls.Add(button12);
+            tabPage5.Controls.Add(button11);
+            tabPage5.Controls.Add(button10);
+            tabPage5.Controls.Add(dataGridView1);
+            tabPage5.Controls.Add(label15);
+            tabPage5.Controls.Add(label14);
+            tabPage5.Controls.Add(label13);
+            tabPage5.Controls.Add(label9);
+            tabPage5.Location = new Point(4, 24);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Padding = new Padding(3);
+            tabPage5.Size = new Size(666, 353);
+            tabPage5.TabIndex = 6;
+            tabPage5.Text = "\U0001f9fe Lista zadań";
+            tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(26, 229);
+            button12.Name = "button12";
+            button12.Size = new Size(123, 30);
+            button12.TabIndex = 8;
+            button12.Text = "Włącz/wyłącz";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(26, 265);
+            button11.Name = "button11";
+            button11.Size = new Size(123, 30);
+            button11.TabIndex = 7;
+            button11.Text = "Edytuj zadanie";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(26, 301);
+            button10.Name = "button10";
+            button10.Size = new Size(123, 30);
+            button10.TabIndex = 6;
+            button10.Text = "Usuń zadanie";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = SystemColors.Control;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
+            dataGridView1.Location = new Point(169, 49);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.ShowEditingIcon = false;
+            dataGridView1.Size = new Size(478, 282);
+            dataGridView1.TabIndex = 5;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Zadanie";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Pozostały czas";
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Stan działania";
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Kolejka";
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(26, 82);
+            label15.Name = "label15";
+            label15.Size = new Size(116, 17);
+            label15.TabIndex = 3;
+            label15.Text = "➡️ Harmonogram";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(26, 113);
+            label14.Name = "label14";
+            label14.Size = new Size(69, 17);
+            label14.TabIndex = 2;
+            label14.Text = "➡️ Stoper";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 9.75F);
+            label13.ForeColor = SystemColors.ControlText;
+            label13.Location = new Point(26, 53);
+            label13.Name = "label13";
+            label13.Size = new Size(102, 17);
+            label13.TabIndex = 1;
+            label13.Text = "➡️ Bezczynność";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label9.Location = new Point(16, 13);
+            label9.Name = "label9";
+            label9.Size = new Size(338, 17);
+            label9.TabIndex = 0;
+            label9.Text = "Kolejka aktywatorów zadań dla określonych liczników";
             // 
             // tabPage3
             // 
@@ -445,33 +646,40 @@ namespace Timer2
             tabPage3.AutoScrollMargin = new Size(0, 20);
             tabPage3.BackColor = SystemColors.ButtonHighlight;
             tabPage3.Controls.Add(groupBox3);
-            tabPage3.Controls.Add(groupBox2);
             tabPage3.Controls.Add(groupBox1);
             tabPage3.Location = new Point(4, 26);
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new Size(666, 351);
             tabPage3.TabIndex = 2;
-            tabPage3.Text = "🛠️Ustawienia";
-            tabPage3.Click += tabPage3_Click_1;
+            tabPage3.Text = "🛠️ Ustawienia";
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(button13);
             groupBox3.Controls.Add(button7);
             groupBox3.Controls.Add(label23);
             groupBox3.Controls.Add(label20);
             groupBox3.Controls.Add(button5);
-            groupBox3.Location = new Point(20, 321);
+            groupBox3.Location = new Point(20, 583);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(610, 108);
             groupBox3.TabIndex = 20;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Aplikacja";
+            // 
+            // button13
+            // 
+            button13.Location = new Point(420, 63);
+            button13.Name = "button13";
+            button13.Size = new Size(175, 28);
+            button13.TabIndex = 22;
+            button13.Text = "Import/kopia ustawień...";
+            button13.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            button7.Location = new Point(312, 63);
+            button7.Location = new Point(222, 63);
             button7.Name = "button7";
-            button7.Size = new Size(280, 28);
+            button7.Size = new Size(192, 28);
             button7.TabIndex = 21;
             button7.Text = "Resetuj ustawienia aplikacji";
             button7.UseVisualStyleBackColor = true;
@@ -498,9 +706,9 @@ namespace Timer2
             label20.ForeColor = Color.ForestGreen;
             label20.Location = new Point(16, 28);
             label20.Name = "label20";
-            label20.Size = new Size(386, 17);
+            label20.Size = new Size(411, 17);
             label20.TabIndex = 18;
-            label20.Text = "Dostępna jest nowa wersja aplikacji. Kliknij mnie aby ją pobrać.";
+            label20.Text = "Dostępna jest nowa wersja aplikacji. Kliknij tutaj aby zaktualizować.";
             label20.Visible = false;
             label20.Click += label20_Click;
             // 
@@ -508,28 +716,74 @@ namespace Timer2
             // 
             button5.Location = new Point(17, 63);
             button5.Name = "button5";
-            button5.Size = new Size(280, 28);
+            button5.Size = new Size(199, 28);
             button5.TabIndex = 5;
             button5.Text = "Edytuj plik konfiguracyjny";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
-            // groupBox2
+            // groupBox1
             // 
-            groupBox2.Controls.Add(checkBox7);
-            groupBox2.Controls.Add(label1);
-            groupBox2.Controls.Add(textBoxUser);
-            groupBox2.Location = new Point(20, 191);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(610, 124);
-            groupBox2.TabIndex = 8;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Zdefiniowane akcje";
+            groupBox1.Controls.Add(checkBox16);
+            groupBox1.Controls.Add(checkBox15);
+            groupBox1.Controls.Add(checkBox12);
+            groupBox1.Controls.Add(checkBox7);
+            groupBox1.Controls.Add(checkBox6);
+            groupBox1.Controls.Add(button6);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(textBoxUser);
+            groupBox1.Controls.Add(checkBox11);
+            groupBox1.Controls.Add(checkBox8);
+            groupBox1.Controls.Add(label27);
+            groupBox1.Controls.Add(label29);
+            groupBox1.Controls.Add(checkBox10);
+            groupBox1.Controls.Add(checkBox5);
+            groupBox1.Controls.Add(checkBox1);
+            groupBox1.Controls.Add(checkBox9);
+            groupBox1.Controls.Add(checkBox3);
+            groupBox1.Controls.Add(checkBox2);
+            groupBox1.Controls.Add(label28);
+            groupBox1.Controls.Add(checkBox4);
+            groupBox1.Location = new Point(20, 14);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(610, 563);
+            groupBox1.TabIndex = 6;
+            groupBox1.TabStop = false;
+            // 
+            // checkBox16
+            // 
+            checkBox16.AutoSize = true;
+            checkBox16.Location = new Point(21, 441);
+            checkBox16.Name = "checkBox16";
+            checkBox16.Size = new Size(397, 21);
+            checkBox16.TabIndex = 39;
+            checkBox16.Text = "Nie pokazuj powiadomień o wykonaniu akcji przez daną kolejkę";
+            checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            checkBox15.AutoSize = true;
+            checkBox15.Location = new Point(20, 527);
+            checkBox15.Name = "checkBox15";
+            checkBox15.Size = new Size(346, 21);
+            checkBox15.TabIndex = 38;
+            checkBox15.Text = "Uruchamiaj program z uprawieniami administracyjnymi";
+            checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            checkBox12.AutoSize = true;
+            checkBox12.Location = new Point(20, 104);
+            checkBox12.Name = "checkBox12";
+            checkBox12.Size = new Size(434, 21);
+            checkBox12.TabIndex = 37;
+            checkBox12.Text = "Automatycznie uruchamiaj zadania zapisane w kolejce harmonogramu";
+            checkBox12.UseVisualStyleBackColor = true;
             // 
             // checkBox7
             // 
             checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(20, 90);
+            checkBox7.Location = new Point(20, 273);
             checkBox7.Name = "checkBox7";
             checkBox7.Size = new Size(545, 21);
             checkBox7.TabIndex = 9;
@@ -537,56 +791,10 @@ namespace Timer2
             checkBox7.UseVisualStyleBackColor = true;
             checkBox7.CheckedChanged += checkBox7_CheckedChanged;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(17, 62);
-            label1.Name = "label1";
-            label1.Size = new Size(478, 17);
-            label1.TabIndex = 8;
-            label1.Text = "Powyżej wpisz polecenie, które ma zadziałać z działaniem - \"Uruchom polecenie\"";
-            label1.Click += label1_Click_1;
-            // 
-            // textBoxUser
-            // 
-            textBoxUser.BorderStyle = BorderStyle.FixedSingle;
-            textBoxUser.Location = new Point(17, 24);
-            textBoxUser.Name = "textBoxUser";
-            textBoxUser.Size = new Size(575, 25);
-            textBoxUser.TabIndex = 7;
-            textBoxUser.TextChanged += textBoxUser_TextChanged;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(checkBox6);
-            groupBox1.Controls.Add(checkBox5);
-            groupBox1.Controls.Add(checkBox1);
-            groupBox1.Controls.Add(checkBox2);
-            groupBox1.Controls.Add(checkBox3);
-            groupBox1.Controls.Add(checkBox4);
-            groupBox1.Location = new Point(20, 14);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(610, 171);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Ogólne";
-            // 
-            // button6
-            // 
-            button6.Enabled = false;
-            button6.Location = new Point(224, 135);
-            button6.Name = "button6";
-            button6.Size = new Size(106, 26);
-            button6.TabIndex = 6;
-            button6.Text = "Ustaw hasło";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
-            // 
             // checkBox6
             // 
             checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(6, 137);
+            checkBox6.Location = new Point(20, 500);
             checkBox6.Name = "checkBox6";
             checkBox6.Size = new Size(220, 21);
             checkBox6.TabIndex = 5;
@@ -594,10 +802,90 @@ namespace Timer2
             checkBox6.UseVisualStyleBackColor = true;
             checkBox6.CheckedChanged += checkBox6_CheckedChanged;
             // 
+            // button6
+            // 
+            button6.Enabled = false;
+            button6.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            button6.Location = new Point(378, 499);
+            button6.Name = "button6";
+            button6.Size = new Size(217, 21);
+            button6.TabIndex = 6;
+            button6.Text = "🔑 Ustaw hasło blokady programu";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(16, 213);
+            label1.Name = "label1";
+            label1.Size = new Size(519, 17);
+            label1.TabIndex = 8;
+            label1.Text = "Polecenie lub ścieżka do programu/skryptu, które ma zostać wykonany przez aktywator.";
+            // 
+            // textBoxUser
+            // 
+            textBoxUser.BorderStyle = BorderStyle.FixedSingle;
+            textBoxUser.Location = new Point(20, 242);
+            textBoxUser.Name = "textBoxUser";
+            textBoxUser.Size = new Size(575, 25);
+            textBoxUser.TabIndex = 7;
+            textBoxUser.TextChanged += textBoxUser_TextChanged;
+            // 
+            // checkBox11
+            // 
+            checkBox11.AutoSize = true;
+            checkBox11.Location = new Point(21, 414);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(314, 21);
+            checkBox11.TabIndex = 36;
+            checkBox11.Text = "Włącz tryb ciemny (czarna kolorystyka programu)";
+            checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            checkBox8.AutoSize = true;
+            checkBox8.Location = new Point(20, 158);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(466, 21);
+            checkBox8.TabIndex = 31;
+            checkBox8.Text = "Podczas aktywacji licznika czasu, sprawdz czy strefa czasowa uległa zmianie";
+            checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label27.Location = new Point(16, 21);
+            label27.Name = "label27";
+            label27.Size = new Size(130, 17);
+            label27.TabIndex = 34;
+            label27.Text = "Działanie programu";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label29.Location = new Point(16, 471);
+            label29.Name = "label29";
+            label29.Size = new Size(101, 17);
+            label29.TabIndex = 36;
+            label29.Text = "Zabezpieczenia";
+            // 
+            // checkBox10
+            // 
+            checkBox10.AutoSize = true;
+            checkBox10.Location = new Point(21, 360);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(350, 21);
+            checkBox10.TabIndex = 33;
+            checkBox10.Text = "Nie pokazuj licznika czasowego po aktywacji odliczania.";
+            checkBox10.UseVisualStyleBackColor = true;
+            // 
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(6, 112);
+            checkBox5.Location = new Point(20, 185);
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(501, 21);
             checkBox5.TabIndex = 4;
@@ -608,7 +896,7 @@ namespace Timer2
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(6, 20);
+            checkBox1.Location = new Point(20, 50);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(394, 21);
             checkBox1.TabIndex = 0;
@@ -616,21 +904,20 @@ namespace Timer2
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
-            // checkBox2
+            // checkBox9
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(6, 43);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(584, 21);
-            checkBox2.TabIndex = 1;
-            checkBox2.Text = "Automatycznie uruchamiaj odliczanie po uruchomieniu programu (tylko aktywator bezczynności)";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            checkBox9.AutoSize = true;
+            checkBox9.Location = new Point(21, 333);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(211, 21);
+            checkBox9.TabIndex = 32;
+            checkBox9.Text = "Nie pokazuj ikonki w zasobniku.";
+            checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(6, 66);
+            checkBox3.Location = new Point(21, 387);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(349, 21);
             checkBox3.TabIndex = 3;
@@ -638,10 +925,31 @@ namespace Timer2
             checkBox3.UseVisualStyleBackColor = true;
             checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(20, 77);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(584, 21);
+            checkBox2.TabIndex = 1;
+            checkBox2.Text = "Automatycznie uruchamiaj odliczanie po uruchomieniu programu (tylko aktywator bezczynności)";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label28.Location = new Point(17, 302);
+            label28.Name = "label28";
+            label28.Size = new Size(55, 17);
+            label28.TabIndex = 35;
+            label28.Text = "Wygląd";
+            // 
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(6, 89);
+            checkBox4.Location = new Point(20, 131);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(439, 21);
             checkBox4.TabIndex = 2;
@@ -651,149 +959,75 @@ namespace Timer2
             // 
             // tabPage4
             // 
+            tabPage4.AutoScroll = true;
             tabPage4.BackColor = SystemColors.ButtonHighlight;
+            tabPage4.Controls.Add(textBoxInfo);
             tabPage4.Controls.Add(label10);
-            tabPage4.Controls.Add(label9);
             tabPage4.Controls.Add(pictureBox4);
-            tabPage4.Controls.Add(pictureBox3);
-            tabPage4.Controls.Add(linkLabel1);
-            tabPage4.Controls.Add(pictureBox2);
             tabPage4.Controls.Add(pictureBox1);
             tabPage4.Controls.Add(label8);
-            tabPage4.Location = new Point(4, 24);
+            tabPage4.Location = new Point(4, 26);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(666, 353);
+            tabPage4.Size = new Size(666, 351);
             tabPage4.TabIndex = 3;
-            tabPage4.Text = "ℹ️ Autorzy";
+            tabPage4.Text = "ℹ️  Informacje ";
+            // 
+            // textBoxInfo
+            // 
+            textBoxInfo.BackColor = Color.WhiteSmoke;
+            textBoxInfo.BorderStyle = BorderStyle.FixedSingle;
+            textBoxInfo.Cursor = Cursors.Help;
+            textBoxInfo.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            textBoxInfo.Location = new Point(27, 87);
+            textBoxInfo.Multiline = true;
+            textBoxInfo.Name = "textBoxInfo";
+            textBoxInfo.ReadOnly = true;
+            textBoxInfo.ScrollBars = ScrollBars.Vertical;
+            textBoxInfo.Size = new Size(624, 161);
+            textBoxInfo.TabIndex = 18;
+            textBoxInfo.Text = resources.GetString("textBoxInfo.Text");
             // 
             // label10
             // 
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label10.Location = new Point(120, 244);
+            label10.Location = new Point(120, 280);
             label10.Name = "label10";
-            label10.Size = new Size(527, 72);
+            label10.Size = new Size(514, 53);
             label10.TabIndex = 16;
             label10.Text = resources.GetString("label10.Text");
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label9.Location = new Point(120, 118);
-            label9.Name = "label9";
-            label9.Size = new Size(314, 60);
-            label9.TabIndex = 15;
-            label9.Text = "Program wykorzystuje następujące technologie: \r\n\r\n.NET Framework w wersji 8.0 firmy Microsoft Corporation, \r\nZestaw ikon Flaticon- https://www.flaticon.com/";
-            label9.Click += label9_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.InitialImage = (Image)resources.GetObject("pictureBox4.InitialImage");
-            pictureBox4.Location = new Point(118, 231);
+            pictureBox4.Location = new Point(118, 262);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(530, 1);
+            pictureBox4.Size = new Size(520, 1);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 13;
             pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.InitialImage = (Image)resources.GetObject("pictureBox3.InitialImage");
-            pictureBox3.Location = new Point(118, 100);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(530, 1);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 12;
-            pictureBox3.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            linkLabel1.Location = new Point(196, 60);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(131, 15);
-            linkLabel1.TabIndex = 10;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "https://windowsbase.pl";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
-            pictureBox2.Location = new Point(25, 15);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(64, 64);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(14, 244);
+            pictureBox1.Location = new Point(14, 280);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(88, 31);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // label8
             // 
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label8.Location = new Point(118, 15);
+            label8.Location = new Point(14, 13);
             label8.Name = "label8";
-            label8.Size = new Size(530, 70);
+            label8.Size = new Size(620, 71);
             label8.TabIndex = 14;
-            label8.Text = "Program został zaprojektowany i stworzony przez Jakub Michalski dla strony WindowsBASE.pl. \r\nCopyright 2024.\r\n\r\nStrona autora: ";
-            // 
-            // tabPage5
-            // 
-            tabPage5.BackColor = SystemColors.Window;
-            tabPage5.Controls.Add(textBoxInfo);
-            tabPage5.Location = new Point(4, 26);
-            tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(666, 351);
-            tabPage5.TabIndex = 4;
-            tabPage5.Text = "💿 Ostatnie zmiany";
-            // 
-            // textBoxInfo
-            // 
-            textBoxInfo.BackColor = SystemColors.Window;
-            textBoxInfo.BorderStyle = BorderStyle.None;
-            textBoxInfo.Font = new Font("Ebrima", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            textBoxInfo.Location = new Point(20, 16);
-            textBoxInfo.Multiline = true;
-            textBoxInfo.Name = "textBoxInfo";
-            textBoxInfo.ReadOnly = true;
-            textBoxInfo.Size = new Size(628, 316);
-            textBoxInfo.TabIndex = 18;
-            textBoxInfo.Text = resources.GetString("textBoxInfo.Text");
-            textBoxInfo.TextChanged += textBox1_TextChanged_2;
-            // 
-            // label19
-            // 
-            label19.BackColor = Color.SlateGray;
-            label19.Enabled = false;
-            label19.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label19.ForeColor = SystemColors.Control;
-            label19.Location = new Point(0, 0);
-            label19.Name = "label19";
-            label19.Size = new Size(733, 553);
-            label19.TabIndex = 17;
-            label19.Text = "\r\nPROGRAM ZABLOKOWANY\r\n_____________________________\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAby go odblokować, naciśnij dowolne miejsce tego \r\nokna, aby wyświetlić okno logowania.";
-            label19.TextAlign = ContentAlignment.TopCenter;
-            label19.Visible = false;
-            label19.Click += label19_Click;
+            label8.Text = resources.GetString("label8.Text");
             // 
             // pictureBox5
             // 
@@ -810,62 +1044,66 @@ namespace Timer2
             // 
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
-            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
             // 
-            // pictureBox6
+            // label19
             // 
-            pictureBox6.BackColor = Color.SlateGray;
-            pictureBox6.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox6.Enabled = false;
-            pictureBox6.Image = TimerSys.Properties.Resources.key_1f511;
-            pictureBox6.InitialImage = (Image)resources.GetObject("pictureBox6.InitialImage");
-            pictureBox6.Location = new Point(280, 147);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(170, 164);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 19;
-            pictureBox6.TabStop = false;
-            pictureBox6.Visible = false;
-            pictureBox6.Click += pictureBox6_Click;
+            label19.Image = TimerSys.Properties.Resources.block;
+            label19.Location = new Point(0, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(732, 552);
+            label19.SizeMode = PictureBoxSizeMode.StretchImage;
+            label19.TabIndex = 19;
+            label19.TabStop = false;
+            // 
+            // helpLink
+            // 
+            helpLink.AutoSize = true;
+            helpLink.LinkColor = Color.FromArgb(255, 128, 128);
+            helpLink.Location = new Point(609, 9);
+            helpLink.Name = "helpLink";
+            helpLink.Size = new Size(111, 17);
+            helpLink.TabIndex = 21;
+            helpLink.TabStop = true;
+            helpLink.Text = "Pomoc programu";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(732, 552);
-            Controls.Add(pictureBox6);
             Controls.Add(label19);
+            Controls.Add(helpLink);
             Controls.Add(tabControl1);
             Controls.Add(pictureBox5);
             Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Wyłącznik czasowy - v.1.0.5";
+            Text = "Wyłącznik czasowy";
             Load += Form1_Load;
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             tabControl1.ResumeLayout(false);
+            tabPage6.ResumeLayout(false);
+            tabPage6.PerformLayout();
+            tabPage5.ResumeLayout(false);
+            tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabPage3.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            tabPage5.ResumeLayout(false);
-            tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)label19).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -874,21 +1112,17 @@ namespace Timer2
         private TextBox textBox7;
         private Button button4;
         private DateTimePicker dateTimePicker1;
-        private Button button3;
         private ComboBox comboBox2;
         private TabPage tabPage1;
+        private Label tip01;
         private TextBox textBox5;
         private TextBox textBox4;
         private Button button2;
-        private Button button1;
         private ComboBox comboBox1;
         public TabControl tabControl1;
         private TabPage tabPage3;
         private TabPage tabPage4;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private LinkLabel linkLabel1;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private Label label2;
         private Label label6;
@@ -897,7 +1131,6 @@ namespace Timer2
         private Label label3;
         private Label label7;
         private Label label10;
-        private Label label9;
         private Label label8;
         private Label label11;
         private PictureBox pictureBox5;
@@ -908,28 +1141,59 @@ namespace Timer2
         private CheckBox checkBox1;
         private Button button5;
         private GroupBox groupBox1;
-        private GroupBox groupBox2;
         private Label label1;
         private TextBox textBoxUser;
-        private ContextMenuStrip contextMenuStrip1;
-        private TabPage tabPage5;
         private TextBox textBoxInfo;
         private Label label13;
         private Label label15;
         private Label label14;
-        private Label label16;
         private Label label17;
-        private Label label18;
+        private Label tip02;
         private CheckBox checkBox5;
         public Button button6;
         private CheckBox checkBox6;
-        public Label label19;
-        public PictureBox pictureBox6;
         private GroupBox groupBox3;
         private Label label20;
         private Label label23;
         private Button button7;
         private CheckBox checkBox7;
+        private TabPage tabPage6;
+        private Label label21;
+        private Label label24;
+        private Label label25;
+        private TextBox textBox1;
+        private Button button8;
+        private Label label22;
+        private ComboBox comboBox3;
+        private Label label26;
+        private CheckBox checkBox9;
+        private CheckBox checkBox8;
+        private CheckedListBox checkedListBox1;
+        private CheckBox checkBox10;
+        private CheckBox checkBox11;
+        private Label label27;
+        private Label label29;
+        private Label label28;
+        private Label tip03;
+        private ContextMenuStrip contextMenuStrip1;
+        private PictureBox label19;
+        private TabPage tabPage5;
+        private DataGridView dataGridView1;
+        private Label label9;
+        private Button button12;
+        private Button button11;
+        private Button button10;
+        private Button button13;
+        private LinkLabel helpLink;
+        private LinkLabel linkLabel1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private CheckBox checkBox12;
+        private CheckBox checkBox16;
+        private CheckBox checkBox15;
+        private Button stopStartHarmonogram;
     }
 }
 

@@ -30,14 +30,7 @@ namespace TimerSys
 
             if (hashedPassword == savedPassword)
             {
-                MainForm.tabControl1.TabPages["tabPage1"].Enabled = true;
-                MainForm.tabControl1.TabPages["tabPage2"].Enabled = true;
-                MainForm.tabControl1.TabPages["tabPage3"].Enabled = true;
-                MainForm.button6.Enabled = true;
-                MainForm.label19.Visible = false;
-                MainForm.label19.Enabled = false;
-                MainForm.pictureBox6.Enabled = false;
-                MainForm.pictureBox6.Visible = false;
+                MainForm.UnlockScreen();
                 this.Close();
             }
             else
