@@ -16,3 +16,5 @@
 - Funkcja działania programu w tle (minimalizacja do zasobnika)
 - Funkcja automatycznego startu odliczania czasu oraz uruchamiania programu
 - Funkcja uniemożliwiająca kontrolowanie planu zasilania przez system Windows
+- Harmonogram i lista zadań- aktywuj więcej niż jedno zadanie do uruchomienia jednocześnie.
+- Nowe opcje: oczysczanie dysku, zrzut ekranu, notatka i wiele więcej.
